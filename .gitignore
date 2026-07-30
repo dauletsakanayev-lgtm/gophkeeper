@@ -1,0 +1,37 @@
+# Бинарники
+/bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Тестовые/coverage файлы
+*.test
+*.out
+coverage.txt
+c.out
+
+# Локальные данные клиента
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Окружение и секреты
+.env
+.env.local
+*.key
+*.pem
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Локальные временные каталоги
+/tmp/
+/dist/
