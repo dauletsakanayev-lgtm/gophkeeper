@@ -1,5 +1,7 @@
 # GophKeeper
 
+![CI](https://github.com/dauletsakanayev-lgtm/gophkeeper/actions/workflows/ci.yml/badge.svg)
+
 Дипломный проект курса «Go-разработчик» от Yandex Practicum.
 
 Клиент-серверная система для безопасного хранения паролей, произвольных
