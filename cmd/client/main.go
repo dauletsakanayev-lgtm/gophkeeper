@@ -1,16 +1,17 @@
 // Command gophkeeper — кросс-платформенный CLI-клиент GophKeeper.
-// Поддерживает регистрацию, аутентификацию, локальное шифрование секретов
-// и их синхронизацию с сервером. Реальные подкоманды будут добавлены
-// в следующих итерациях (cobra).
+// Реальная логика в internal/client/cli, здесь только запуск.
 package main
 
 import (
+	"fmt"
 	"os"
 
-	"github.com/dauletsakanayev-lgtm/gophkeeper/internal/version"
+	"github.com/dauletsakanayev-lgtm/gophkeeper/internal/client/cli"
 )
 
 func main() {
-	version.Print(os.Stdout, "gophkeeper")
-	// TODO(iter5): implement cobra root command with subcommands.
+	if err := cli.Execute(); err != nil {
+		fmt.Fprintln(os.Stderr, "error:", err)
+		os.Exit(1)
+	}
 }
