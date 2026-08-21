@@ -29,8 +29,10 @@ func init() {
 		logoutCmd,
 		versionCmd,
 		putCmd,
+		updateCmd,
 		getCmd,
 		listCmd,
 		deleteCmd,
+		syncCmd,
 	)
 }
